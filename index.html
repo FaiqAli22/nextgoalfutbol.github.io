@@ -4,118 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Next Goal Futbol</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background: url('field.jpg') no-repeat center center fixed;
+            background-size: cover;
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f4f4f4;
+            color: #fff;
         }
         header {
-            background: linear-gradient(90deg, #004aad, #00b478);
-            color: white;
+            background: rgba(0, 64, 0, 0.85);
             padding: 20px;
             text-align: center;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        }
         nav a {
+            color: #00ccff;
+            margin: 0 15px;
             text-decoration: none;
-            color: #004aad;
             font-weight: bold;
         }
-        .hero {
-            background: url('background.jpg') no-repeat center center/cover;
-            height: 80vh;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.7);
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .section {
+        .container {
             padding: 40px;
             text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .gallery img {
+            width: 45%;
+            margin: 10px;
+            border-radius: 10px;
         }
         .buttons a {
             display: inline-block;
-            margin: 15px;
-            padding: 15px 30px;
-            background: #00b478;
+            background: #00cc66;
             color: white;
-            border-radius: 8px;
+            padding: 15px 25px;
+            margin: 20px;
             text-decoration: none;
-            font-weight: bold;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-            padding: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+            font-size: 18px;
+            border-radius: 8px;
         }
         footer {
-            background: #004aad;
-            color: white;
             text-align: center;
             padding: 20px;
+            background: rgba(0, 64, 0, 0.85);
+            margin-top: 40px;
         }
-        .contact a {
-            color: #00ffcc;
+        footer a {
+            color: #00ccff;
             text-decoration: none;
-            display: block;
-            margin-top: 8px;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Next Goal Futbol</h1>
+        <nav>
+            <a href="#training">Training Options</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
 
-<header>
-    <h1>Next Goal Futbol</h1>
-</header>
-
-<div class="hero">
-    <h1>Train Like a Champion</h1>
-    <p>Choose Your Path: Group or 1-on-1 Sessions</p>
-</div>
-
-<section class="section">
-    <h2>Book Your Session</h2>
-    <div class="buttons">
-        <a href="https://forms.gle/your-group-form" target="_blank">Group Training</a>
-        <a href="https://forms.gle/your-1on1-form" target="_blank">1-on-1 Training</a>
+    <div class="container" id="training">
+        <h2>Select a Training Option</h2>
+        <div class="buttons">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd71htBu5rLORqjjawHpfnU3HQL2aFexh2ehrHuBmWBbWrqnQ/viewform?usp=header" target="_blank">Group Training</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScgQQmuxE3klRxCBgd0swrwtgrTzF8Cz8tJEnJLv2zbPZD5kA/viewform?usp=header" target="_blank">1-on-1 Training</a>
+        </div>
     </div>
-</section>
 
-<section class="section">
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="background.jpg" alt="Training Photo">
+    <div class="container" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="field.jpg" alt="Soccer Field">
+            <img src="cones.jpg" alt="Soccer Drills">
+        </div>
     </div>
-</section>
 
-<footer>
-    <h3>Contact Us</h3>
-    <div class="contact">
-        <a href="mailto:nextgoalfutbol@gmail.com">📧 nextgoalfutbol@gmail.com</a>
-        <a href="https://wa.me/19053917786" target="_blank">📱 Message us on WhatsApp</a>
-        <a href="https://instagram.com/nextgoalfutbol" target="_blank">📸 DM us on Instagram</a>
-    </div>
-    <p>&copy; 2025 Next Goal Futbol. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>Follow us:
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://wa.me" target="_blank">WhatsApp</a>
+        </p>
+        <p>© 2025 Next Goal Futbol. All rights reserved.</p>
+    </footer>
 </body>
 </html>
